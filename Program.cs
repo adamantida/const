@@ -21,6 +21,7 @@ namespace asd
                 tree = Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("впишите единичные или ...2: ");
                 fore = Convert.ToSingle(Console.ReadLine());
+                FicksetDest!
                 // -----------------------------------work------------------------------------
                 five = one / 100;
                 six = two / 100;
