@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 
 namespace asd
 {
@@ -10,7 +10,7 @@ namespace asd
             var a = Console.ReadLine();
             if (a == "%")
             {
-                float one, two, tree, fore,five,six,seven,ni2;
+                float one, two, tree, fore, five, six, seven, ni2;
                 float p1, p2;
                 float all;
                 Console.WriteLine("впишите десятичные или сотые: ");
@@ -33,6 +33,7 @@ namespace asd
                 Console.WriteLine("Ответ " + all);
                 Console.ReadKey();
             }
+
             if (a == "-")
             {
                 float inp1, inp2, inp3, inp4;
@@ -43,42 +44,26 @@ namespace asd
                 Console.WriteLine("введите вероятность 2: ");
                 inp2 = Convert.ToSingle(Console.ReadLine());
                 //-------------------------------------------------------------------------------
-                                        string dop;
-                                        float dop1, dop2;
-                                        Console.WriteLine("есть ли дополнительные условия?(Y,n)(Всего вещей  = из них): ");
-                                        dop = Console.ReadLine();
-                                        if (dop == "Y")
-                                        {
-                                            Console.WriteLine("Вещь: ");
-                                            dop1 = Convert.ToSingle(Console.ReadLine());
-                                            Console.WriteLine("из них: ");
-                                            dop2 = Convert.ToSingle(Console.ReadLine());
-                                            float inp5 = (dop2 / dop1);
-                                            float inp6 = 1 - inp5;
-                                            float sum3 = inp5 * inp1;
-                                            float sum4 = inp6 * inp2;
-                                            float sum5 = sum3 + sum4;
-                                            Console.WriteLine("Вероятность попадения: "+ sum5);
-                                            float sum6 = 1 - sum5;
-                                            Console.WriteLine("Вероятность промаха: " + sum6);
-                                            Console.ReadLine();
-                                        }
-                                        if (dop == "y")
-                                        {
-                                            Console.WriteLine("Вещь: ");
-                                            dop1 = Convert.ToSingle(Console.ReadLine());
-                                            Console.WriteLine("из них: ");
-                                            dop2 = Convert.ToSingle(Console.ReadLine());
-                                            float inp5 = (dop2 / dop1);
-                                            float inp6 = 1 - inp5;
-                                            float sum3 = inp5 * inp1;
-                                            float sum4 = inp6 * inp2;
-                                            float sum5 = sum3 + sum4;
-                                            Console.WriteLine("Вероятность попадения: "+ sum5);
-                                            float sum6 = 1 - sum5;
-                                            Console.WriteLine("Вероятность промаха: " + sum6);
-                                            Console.ReadLine();
-                                        }
+                string dop;
+                float dop1, dop2;
+                Console.WriteLine("есть ли дополнительные условия?(Y,n)(Всего вещей  = из них): ");
+                dop = Console.ReadLine();
+                if (dop == "Y" || dop == "y")
+                {
+                    Console.WriteLine("Вещь: ");
+                    dop1 = Convert.ToSingle(Console.ReadLine());
+                    Console.WriteLine("из них: ");
+                    dop2 = Convert.ToSingle(Console.ReadLine());
+                    var inp5 = dop2 / dop1;
+                    var inp6 = 1 - inp5;
+                    var sum3 = inp5 * inp1;
+                    var sum4 = inp6 * inp2;
+                    var sum5 = sum3 + sum4;
+                    Console.WriteLine("Вероятность попадения: " + sum5);
+                    var sum6 = 1 - sum5;
+                    Console.WriteLine("Вероятность промаха: " + sum6);
+                    Console.ReadLine();
+                }
                 else
                 {
                     //--------------------------------------------------------------------------------
