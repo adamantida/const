@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 
 namespace asd
 {
@@ -10,7 +10,6 @@ namespace asd
             var a = Console.ReadLine();
             if (a == "%")
             {
-                Start:
                 float one, two, tree, fore,five,six,seven,ni2;
                 float p1, p2;
                 float all;
@@ -22,7 +21,6 @@ namespace asd
                 tree = Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine("впишите единичные или ...2: ");
                 fore = Convert.ToSingle(Console.ReadLine());
-                goto Start;
                 // -----------------------------------work------------------------------------
                 five = one / 100;
                 six = two / 100;
